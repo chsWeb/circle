@@ -29,6 +29,10 @@ https://community.circle.so/c/share-and-learn/take-advantage-of-new-circle-seo-f
 
 ## Analytics & Member Activity
 
+How do I effectively use analytics to grow my community?
+I use a combination of Mixpanel with Circle Analytics to support brand strategy based on the North Star Framework.
+https://community.circle.so/c/ask-the-community/making-sense-of-analytics#comment_wrapper_92983839
+
 Clarifies the difference between “last logged in” and actual user activity in Circle analytics, based on direct testing.
 https://community.circle.so/c/share-and-learn/does-last-logged-in-last-time-active
 
