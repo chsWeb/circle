@@ -29,12 +29,22 @@ https://community.circle.so/c/share-and-learn/take-advantage-of-new-circle-seo-f
 
 ## Analytics & Member Activity
 
+How do I track the lifetime value of subscribers on Circle?
+I do this with Mixpanel Insights reporting that pulls in all Paywall Conversions, Sums the Revenue, for a Time Range of All time. From there, I can break the report down by whatever makes sense.
+https://community.circle.so/c/ask-the-community/ltv
+
 How do I effectively use analytics to grow my community?
 I use a combination of Mixpanel with Circle Analytics to support brand strategy based on the North Star Framework.
 https://community.circle.so/c/ask-the-community/making-sense-of-analytics#comment_wrapper_92983839
 
 Clarifies the difference between “last logged in” and actual user activity in Circle analytics, based on direct testing.
 https://community.circle.so/c/share-and-learn/does-last-logged-in-last-time-active
+
+## Circle Event and Cohort Strategy
+Provides a step-by-step guide for cohort management.
+How do I reset my community for a new group program?
+
+https://community.circle.so/c/ask-the-community/can-i-facilitate-a-group-program-in-my-community#comment_wrapper_94557030
 
 ## Writing & Content Creation
 
