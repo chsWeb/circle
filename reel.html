@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Circle Work Showcase - Video Portfolio</title>
+        <meta name="description" content="A simple video showcase of recent Circle community work." />
+
+        <style>
+            /* MARK: Base */
+            :root {
+                --hue-primary: 216;
+                --sat-primary: 90%;
+                --color-primary: var(--hue-primary), var(--sat-primary);
+
+                --hue-neutral: 210;
+                --sat-neutral: 6%;
+                --color-neutral: var(--hue-neutral), var(--sat-neutral);
+
+                --bg: hsl(var(--color-neutral), 98%);
+                --card: hsl(var(--color-neutral), 100%);
+                --text: hsl(var(--color-neutral), 14%);
+                --muted: hsl(var(--color-neutral), 38%);
+                --border: hsl(var(--color-neutral), 90%);
+                --shadow: 0 10px 30px rgba(0, 0, 0, .06);
+                --radius: 16px;
+                --max: 1040px;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                height: 100%;
+            }
+
+            body {
+                margin: 0;
+                font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+                background: var(--bg);
+                color: var(--text);
+                line-height: 1.5;
+            }
+
+            a {
+                color: hsl(var(--color-primary), 42%);
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            /* MARK: Layout */
+            .wrap {
+                max-width: var(--max);
+                margin: 0 auto;
+                padding: 24px 16px 48px;
+            }
+
+            header {
+                padding: 24px 0 8px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .kicker {
+                font-size: 13px;
+                color: var(--muted);
+                letter-spacing: .02em;
+                text-transform: uppercase;
+            }
+
+            h1 {
+                margin: 0;
+                font-size: clamp(22px, 3vw, 34px);
+                line-height: 1.15;
+                letter-spacing: -0.02em;
+            }
+
+            .subhead {
+                margin: 0;
+                color: var(--muted);
+                max-width: 72ch;
+                font-size: 15px;
+            }
+
+            .cta-row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+                padding: 8px 0 0;
+            }
+
+            .btn {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                padding: 12px 16px;
+                border-radius: 999px;
+                border: 1px solid var(--border);
+                background: var(--card);
+                box-shadow: 0 1px 0 rgba(0, 0, 0, .02);
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            .btn.primary {
+                background: hsl(var(--color-primary), 42%);
+                border-color: hsl(var(--color-primary), 42%);
+                color: white;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 16px;
+                margin-top: 20px;
+            }
+
+            /* MARK: Cards */
+            .card {
+                background: var(--card);
+                border: 1px solid var(--border);
+                border-radius: var(--radius);
+                box-shadow: var(--shadow);
+                overflow: hidden;
+            }
+
+            .card-body {
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .title {
+                margin: 0;
+                font-size: 16px;
+                letter-spacing: -0.01em;
+            }
+
+            .meta {
+                margin: 0;
+                color: var(--muted);
+                font-size: 14px;
+            }
+
+            /* MARK: Video embed (responsive 16:9) */
+            .video {
+                position: relative;
+                width: 100%;
+                aspect-ratio: 16 / 9;
+                background: hsl(var(--color-neutral), 92%);
+            }
+
+            .video iframe {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+
+            /* MARK: Footer */
+            footer {
+                margin-top: 24px;
+                color: var(--muted);
+                font-size: 13px;
+                padding: 12px 0 0;
+            }
+
+            /* MARK: Desktop */
+            @media (min-width: 920px) {
+                .grid {
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                .card.span-2 {
+                    grid-column: 1 / -1;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <main class="wrap">
+            <header>
+                <div class="kicker">Video Showcase</div>
+                <h1>Recent Circle Community Work</h1>
+                <p class="subhead">
+                    Three short walkthroughs showing real implementations with Circle customizations, advanced analytics
+                    reporting, conversion optimization, SEO & UX
+                    design.
+                </p>
+
+                <div class="cta-row">
+                    <a class="btn primary" href="https://cal.com/jonoyoung" target="_blank" rel="noopener">Book a
+                        Call</a>
+                    <!--<a class="btn" href="#" target="_blank" rel="noopener">View Case Studies</a>-->
+                </div>
+            </header>
+
+            <section class="grid" aria-label="Video portfolio">
+                <!-- VIDEO 1 -->
+                <article class="card span-2">
+                    <div class="video">
+                        <!-- Replace src with your Bunny.net embed URL -->
+                        <div style="position:relative;padding-top:56.25%;"><iframe
+                                src="https://iframe.mediadelivery.net/embed/349534/589386e4-2f06-4201-96ba-a37e23b0cb4f?autoplay=false&loop=false&muted=false&preload=true&responsive=true"
+                                loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;"
+                                allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
+                                allowfullscreen="true"></iframe></div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="title">1) Circle Analytics + Mixpanel, clean events and reliable identity</h2>
+                        <p class="meta">What we shipped, why it matters, and what you can measure immediately.</p>
+                    </div>
+                </article>
+
+                <!-- VIDEO 1 -->
+                <article class="card span-2">
+                    <div class="video">
+                        <!-- Replace src with your Bunny.net embed URL -->
+                        <div style="position:relative;padding-top:56.25%;"><iframe
+                                src="https://iframe.mediadelivery.net/embed/349534/0125eb14-390b-4cf7-adb4-83cef12b3e05?autoplay=false&loop=false&muted=false&preload=true&responsive=true"
+                                loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;"
+                                allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
+                                allowfullscreen="true"></iframe></div>
+                        <div class="card-body">
+                            <h2 class="title">1) Circle Analytics + Mixpanel, clean events and reliable identity</h2>
+                            <p class="meta">What we shipped, why it matters, and what you can measure immediately.</p>
+                        </div>
+                </article>
+
+                <!-- VIDEO 1 -->
+                <article class="card span-2">
+                    <div class="video">
+                        <!-- Replace src with your Bunny.net embed URL -->
+                        <div style="position:relative;padding-top:56.25%;"><iframe
+                                src="https://iframe.mediadelivery.net/embed/349534/a11b344b-ca12-4632-8e99-dc5dff9b74b0?autoplay=false&loop=false&muted=false&preload=true&responsive=true"
+                                loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;"
+                                allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
+                                allowfullscreen="true"></iframe></div>
+                        <div class="card-body">
+                            <h2 class="title">1) Circle Analytics + Mixpanel, clean events and reliable identity</h2>
+                            <p class="meta">What we shipped, why it matters, and what you can measure immediately.</p>
+                        </div>
+                </article>
+            </section>
+
+            <footer>
+                &copy; 2026 WePiphany&trade; | Jono Young
+            </footer>
+        </main>
+
+        <script>
+            // Optional: minimal UX niceties.
+            // If you want, you can add querystring parameters later (e.g., ?v=2 to highlight a video).
+        </script>
+    </body>
+
+</html>
