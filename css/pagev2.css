@@ -76,6 +76,34 @@
 
     --checkmark: var(--color-brand-500);
 }
+/* MARK: Temp theme */
+.theme-light {
+  background: #ffffff;
+  color: #111111;
+}
+
+.theme-light .section--hero {
+  background: #f7f7f7;
+}
+
+.theme-light h1,
+.theme-light h2,
+.theme-light h3 {
+  color: #111111;
+}
+
+.theme-light p,
+.theme-light li {
+  color: #333333;
+}
+
+.theme-light a {
+  color: #2563eb;
+}
+
+.theme-light a:hover {
+  text-decoration: underline;
+}
 
 /*    MARK: Design Tokens (Dark mode override – system controlled) */
 @media (prefers-color-scheme: dark) {
