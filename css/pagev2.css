@@ -12,56 +12,134 @@
     --space-4xl: 144px;
 
     /* Brand */
-    --color-brand-500: hsl(245 75% 58%);
-    --color-brand-900: hsl(245 100% 10%);
+    --color-brand-500: light-dark(hsl(245 75% 58%),
+            hsl(245 85% 68%));
 
-    /* gradient colors */
-    --bg: #fcfcf8;
-    --bg-deep: #f6f7f3;
+    --color-brand-900: light-dark(hsl(245 100% 10%),
+            hsl(245 90% 85%));
+
+    /* Backgrounds */
+    --bg: light-dark(hsl(60 20% 98%),
+            hsl(245 15% 8%));
+
+    --bg-deep: light-dark(hsl(80 15% 95%),
+            hsl(245 15% 11%));
 
     /* Text */
-    --color-text-disabled: hsl(0 0% 78%);
-    --color-text-light: hsl(0 0% 33%);
-    --color-text-medium: hsl(0 0% 14%);
-    --color-text-dark: hsl(0 0% 7%);
+    --color-text-disabled: light-dark(hsl(0 0% 78%),
+            hsl(0 0% 45%));
+
+    --color-text-light: light-dark(hsl(0 0% 33%),
+            hsl(0 0% 70%));
+
+    --color-text-medium: light-dark(hsl(0 0% 14%),
+            hsl(0 0% 85%));
+
+    --color-text-dark: light-dark(hsl(0 0% 7%),
+            hsl(0 0% 95%));
 
     /* Surfaces */
-    --surface-page: hsl(0 0% 100%);
-    --surface-card: hsl(0 0% 100%);
-    --surface-soft: hsl(240 100% 98%);
-    --surface-media: hsl(0 0% 92%);
+    --surface-page: light-dark(hsl(0 0% 100%),
+            hsl(245 15% 10%));
+
+    --surface-card: light-dark(hsl(0 0% 100%),
+            hsl(245 15% 13%));
+
+    --surface-soft: light-dark(hsl(240 100% 98%),
+            hsl(245 20% 18%));
+
+    --surface-media: light-dark(hsl(0 0% 92%),
+            hsl(245 15% 20%));
 
     /* Borders */
-    --border-subtle: hsl(0 0% 87%);
-    --border-strong: hsl(0 0% 100%);
+    --border-subtle: light-dark(hsl(0 0% 87%),
+            hsl(245 10% 25%));
 
-    /* Shadows */
-    --shadow-hero: 0 40px 80px hsl(0 0% 0% / 0.08);
-    --shadow-layer: 0 20px 40px hsl(0 0% 0% / 0.12);
-    --shadow-card:
-        0 10px 30px hsl(0 0% 0% / 0.06),
-        0 1px 0 hsl(0 0% 0% / 0.04);
+    --border-strong: light-dark(hsl(0 0% 100%),
+            hsl(245 10% 35%));
 
-    /* Accent shadow for purple hover states */
-    --shadow-accent-soft: 0 10px 22px hsl(245 75% 58% / 0.18);
-    --shadow-accent-strong: 0 10px 22px hsl(245 75% 58% / 0.35);
+    /* ===================================================== */
+/* SHADOWS                                               */
+/* ===================================================== */
 
-    /* Background effects */
-    --bg-radial:
-        radial-gradient(1600px 1000px at 50% -25%,
-            hsl(230 90% 90%) 0%,
-            hsl(230 90% 96%) 42%,
-            hsl(0 0% 100%) 78%);
+--shadow-hero: light-dark(
+  0 40px 80px hsl(0 0% 0% / 0.08),
+  0 40px 80px hsl(0 0% 0% / 0.65)
+);
 
-    --bg-bottom:
-        linear-gradient(to bottom,
-            hsl(0 0% 100% / 0) 0%,
-            hsl(240 100% 98%) 100%);
+--shadow-layer: light-dark(
+  0 20px 40px hsl(0 0% 0% / 0.12),
+  0 20px 40px hsl(0 0% 0% / 0.55)
+);
 
-    --gradient-calm-01:
-        radial-gradient(900px 500px at 10% -10%, hsl(18 70% 92%), transparent 60%),
-        radial-gradient(700px 420px at 85% 5%, hsl(188 45% 90%), transparent 60%),
-        linear-gradient(180deg, var(--bg), var(--bg-deep));
+--shadow-card: light-dark(
+  0 10px 30px hsl(0 0% 0% / 0.06),
+  0 1px 0 hsl(0 0% 100% / 0.05)
+),
+light-dark(
+  0 1px 0 hsl(0 0% 0% / 0.04),
+  0 10px 30px hsl(0 0% 0% / 0.6)
+);
+
+
+/* Accent glow (brighter in dark mode) */
+
+--shadow-accent-soft: light-dark(
+  0 10px 22px hsl(245 75% 58% / 0.18),
+  0 10px 28px hsl(245 85% 70% / 0.45)
+);
+
+--shadow-accent-strong: light-dark(
+  0 10px 22px hsl(245 75% 58% / 0.35),
+  0 10px 35px hsl(245 90% 75% / 0.65)
+);
+
+
+/* ===================================================== */
+/* BACKGROUND ATMOSPHERE                                 */
+/* ===================================================== */
+
+--bg-radial: light-dark(
+  radial-gradient(
+    1600px 1000px at 50% -25%,
+    hsl(230 90% 90%) 0%,
+    hsl(230 90% 96%) 42%,
+    hsl(0 0% 100%) 78%
+  ),
+  radial-gradient(
+    1400px 900px at 50% -20%,
+    hsl(245 60% 22%) 0%,
+    hsl(245 40% 14%) 45%,
+    hsl(245 20% 10%) 80%
+  )
+);
+
+
+--bg-bottom: light-dark(
+  linear-gradient(
+    to bottom,
+    hsl(0 0% 100% / 0) 0%,
+    hsl(240 100% 98%) 100%
+  ),
+  linear-gradient(
+    to bottom,
+    hsl(245 20% 10% / 0) 0%,
+    hsl(245 25% 16%) 100%
+  )
+);
+
+
+/* Calm multi-layer gradient */
+
+--gradient-calm-01: light-dark(
+  radial-gradient(900px 500px at 10% -10%, hsl(18 70% 92%), transparent 60%),
+  radial-gradient(900px 500px at 10% -10%, hsl(18 60% 30% / 0.35), transparent 60%)
+),
+light-dark(
+  radial-gradient(700px 420px at 85% 5%, hsl(188 45% 90%), transparent 60%),
+  radial-gradient(700px 420px at 85% 5%, hsl(188 50% 32% / 0.35), transparent 60%)
+),
+linear-gradient(180deg, var(--bg), var(--bg-deep));
 
     /* UI */
     --tab-bg: var(--surface-card);
@@ -80,31 +158,31 @@
 
 /* MARK: Temp theme */
 .theme-light {
-  background: #ffffff;
-  color: #111111;
+    background: #ffffff;
+    color: #111111;
 }
 
 .theme-light .section--hero {
-  background: #f7f7f7;
+    background: #f7f7f7;
 }
 
 .theme-light h1,
 .theme-light h2,
 .theme-light h3 {
-  color: #111111;
+    color: #111111;
 }
 
 .theme-light p,
 .theme-light li {
-  color: #333333;
+    color: #333333;
 }
 
 .theme-light a {
-  color: #2563eb;
+    color: #2563eb;
 }
 
 .theme-light a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /*    MARK: Design Tokens (Dark mode override – system controlled) */
