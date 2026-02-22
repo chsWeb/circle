@@ -57,10 +57,11 @@
         linear-gradient(to bottom,
             hsl(0 0% 100% / 0) 0%,
             hsl(240 100% 98%) 100%);
-    --gradient-calm-01: radial-gradient(900px 500px at 10% -10%, hsl(18 70% 92%), transparent 60%),
+
+    --gradient-calm-01:
+        radial-gradient(900px 500px at 10% -10%, hsl(18 70% 92%), transparent 60%),
         radial-gradient(700px 420px at 85% 5%, hsl(188 45% 90%), transparent 60%),
         linear-gradient(180deg, var(--bg), var(--bg-deep));
-
 
     /* UI */
     --tab-bg: var(--surface-card);
@@ -76,6 +77,7 @@
 
     --checkmark: var(--color-brand-500);
 }
+
 /* MARK: Temp theme */
 .theme-light {
   background: #ffffff;
@@ -108,30 +110,42 @@
 /*    MARK: Design Tokens (Dark mode override – system controlled) */
 @media (prefers-color-scheme: dark) {
     :root {
+        /* Brand */
         --color-brand-500: hsl(245 90% 70%);
+        --color-brand-900: hsl(245 80% 85%);
 
+        /* Background base colors */
+        --bg: hsl(230 20% 8%);
+        --bg-deep: hsl(230 22% 6%);
+
+        /* Text */
         --color-text-disabled: hsl(230 10% 45%);
         --color-text-light: hsl(230 12% 70%);
         --color-text-medium: hsl(230 18% 86%);
-        --color-text-dark: hsl(230 30% 90%);
+        --color-text-dark: hsl(230 30% 96%);
 
+        /* Surfaces */
         --surface-page: hsl(230 20% 6%);
         --surface-card: hsl(230 20% 10%);
         --surface-soft: hsl(230 25% 14%);
         --surface-media: hsl(230 25% 14%);
 
+        /* Borders */
         --border-subtle: hsl(230 20% 22%);
         --border-strong: hsl(230 20% 30%);
 
+        /* Shadows — much deeper in dark mode */
         --shadow-hero: 0 40px 80px hsl(0 0% 0% / 0.55);
         --shadow-layer: 0 20px 40px hsl(0 0% 0% / 0.65);
         --shadow-card:
             0 10px 30px hsl(0 0% 0% / 0.55),
             0 1px 0 hsl(0 0% 0% / 0.45);
 
+        /* Accent shadows */
         --shadow-accent-soft: 0 10px 22px hsl(245 90% 70% / 0.25);
         --shadow-accent-strong: 0 10px 22px hsl(245 90% 70% / 0.42);
 
+        /* Background effects */
         --bg-radial:
             radial-gradient(1600px 1000px at 50% -25%,
                 hsl(230 30% 18%) 0%,
@@ -142,12 +156,22 @@
                 hsl(0 0% 0% / 0) 0%,
                 hsl(230 25% 10%) 100%);
 
+        --gradient-calm-01:
+            radial-gradient(900px 500px at 10% -10%, hsl(18 30% 14%), transparent 60%),
+            radial-gradient(700px 420px at 85% 5%, hsl(188 20% 12%), transparent 60%),
+            linear-gradient(180deg, var(--bg), var(--bg-deep));
+
+        /* UI */
         --tab-bg: var(--surface-card);
         --tab-border: var(--border-subtle);
         --tab-text: var(--color-text-medium);
         --tab-hover-bg: var(--surface-soft);
 
+        --cta-primary-bg: var(--color-brand-500);
+        --cta-primary-text: hsl(0 0% 100%);
+
         --cta-secondary-bg: var(--surface-card);
+        --cta-secondary-text: var(--color-brand-500);
 
         --checkmark: var(--color-brand-500);
     }
@@ -177,16 +201,6 @@ body {
     line-height: 1.5;
 }
 
-/* Background gradient layer (always behind everything) */
-/*body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: -1;
-    background: var(--bg-radial);
-}*/
-
 /*    MARK: Images */
 /* Ensure media images fill the split container */
 .split-media img,
@@ -202,14 +216,7 @@ body {
     padding-block: var(--space-3xl);
 }
 
-/* Gradient background at bottom */
-/*.gradient-bg-bottom {
-    background: var(--bg-bottom);
-}*/
-
 .section--hero {
-    /*padding-top: var(--space-xl);
-    padding-bottom: var(--space-lg);*/
     text-align: center;
     background: var(--bg-radial);
 }
@@ -234,11 +241,7 @@ body {
     padding-inline: 1.25rem;
 }
 
-/*    MARK: Hero */
-/*.hero {
-    background: transparent;
-    overflow: visible;
-}*/
+/*    MARK: Typography */
 :is(h1, h2, h3, h4, h5, h6) {
     text-wrap: balance;
     color: var(--color-brand-900);
@@ -251,14 +254,13 @@ h1 {
     margin-bottom: var(--space-md);
 }
 
-/* H2 – Section headers */
+/* H2 – Section headers — left aligned */
 h2 {
     font-size: clamp(1.75rem, 3.5vw, 2.5rem);
     line-height: 1.15;
     margin-bottom: var(--space-sm);
-    /*max-width: 80%;*/
-    text-align: center;
-    margin-inline: auto;
+    text-align: left;
+    margin-inline: 0;
 }
 
 .split-content h3 {
@@ -266,22 +268,19 @@ h2 {
     font-weight: 700;
 }
 
-/* sub heading */
+/* H3 – Sub-section headers */
 h3 {
     font-size: clamp(1.5rem, 3.25vw, 2.25rem);
     line-height: 1.15;
     margin-bottom: var(--space-sm);
-    /*max-width: 80%;*/
     text-align: center;
     margin-inline: auto;
 }
 
-/* H3 – Sub-section headers */
 h3:not(> .card) {
     font-size: clamp(1.5rem, 2.75vw, 2rem);
     line-height: 1.2;
     margin-bottom: var(--space-xs);
-    /*max-width: 80%;*/
     text-align: center;
     margin-inline: auto;
 }
@@ -291,7 +290,6 @@ h4 {
     font-size: clamp(1.25rem, 2vw, 1.5rem);
     line-height: 1.25;
     margin-bottom: var(--space-xxs);
-    /*max-width: 80%;*/
     text-align: center;
     margin-inline: auto;
 }
@@ -303,7 +301,6 @@ h5 {
     font-weight: 600;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    /*max-width: 80%;*/
     text-align: center;
     margin-inline: auto;
 }
@@ -315,7 +312,6 @@ h6 {
     font-weight: 600;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    /*max-width: 80%;*/
     text-align: center;
     margin-inline: auto;
 }
@@ -335,13 +331,11 @@ p.lead {
 }
 
 p.lg {
-    /*font-size: 1.25rem;*/
     font-size: 1.3rem;
     color: var(--color-text-dark);
     font-weight: 600;
     line-height: 1.4;
     max-width: 80%;
-    /*color: var(--color-text-light);*/
     text-align: center;
     margin-inline: auto;
     text-wrap: balance;
@@ -380,11 +374,12 @@ ul.cta {
     gap: 0.5rem;
     border-radius: 0.375rem;
     display: inline-block;
-    background: #FFF;
+    background: var(--surface-card);
+    color: var(--color-text-dark);
     box-shadow: 0 48px 108px 0 rgba(0, 0, 0, 0.07), 0 28.262px 56.333px 0 rgba(0, 0, 0, 0.05), 0 14.515px 26.438px 0 rgba(0, 0, 0, 0.04), 0 5.837px 11.578px 0 rgba(0, 0, 0, 0.03), 0 1.306px 5.011px 0 rgba(0, 0, 0, 0.02);
 }
 
-/* Paragraph – default (your existing baseline) */
+/* Paragraph – default */
 p:not(> .card) {
     max-width: 80%;
     font-size: 1.1rem;
@@ -421,50 +416,15 @@ ul:not(> .card) {
     }
 }
 
-/*.hero-canvas {
-    position: relative;
-    width: 100%;
-    max-width: 1100px;
-    aspect-ratio: 16 / 9;
-    pointer-events: none;
-}*/
-
-/*.hero-base {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 18px;
-    box-shadow: var(--shadow-hero);
-}*/
-
-/*.hero-layer {
-    position: absolute;
-    border-radius: 12px;
-    box-shadow: var(--shadow-layer);
-}
-
-.layer-1 {
-    top: 12%;
-    left: -4%;
-}
-
-.layer-2 {
-    bottom: 10%;
-    right: -6%;
-}
-
-.layer-3 {
-    top: 55%;
-    right: 12%;
-}*/
-
 /*    MARK: Value Moments */
 .value-moments {
-    /*padding-top: var(--space-3xl);
-    padding-top: var(--space-3xl);
-    padding-bottom: var(--space-3xl);
-    padding-bottom: var(--space-3xl);*/
-    background: hsl(250 20 97);
+    background: hsl(250 20% 97%);
+}
+
+@media (prefers-color-scheme: dark) {
+    .value-moments {
+        background: hsl(250 15% 9%);
+    }
 }
 
 /* Header stays centered */
@@ -495,7 +455,6 @@ ul:not(> .card) {
 
     @media (width < 600px) {
         font-size: .8rem;
-        /*padding: .5rem .75rem !important;*/
         padding: var(--space-sm) calc(var(--space-md) * 1.05);
     }
 }
@@ -569,7 +528,13 @@ ul:not(> .card) {
 }
 
 section:has(.services) {
-    background: hsl(245 40 95);
+    background: hsl(245 40% 95%);
+}
+
+@media (prefers-color-scheme: dark) {
+    section:has(.services) {
+        background: hsl(245 20% 9%);
+    }
 }
 
 .container:has(.services) {
@@ -638,13 +603,19 @@ a.cta.secondary {
     background: var(--cta-secondary-bg);
     color: var(--cta-secondary-text);
     border: 1px solid hsl(from var(--color-brand-500) h s 85);
-    /*1px solid hsl(from var(--color-brand-500) h 30 27)*/
     text-decoration: none;
     font-weight: 600;
     text-align: center;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
     box-shadow: 0 8px 18px hsl(245 75% 58% / 0.25);
     text-transform: capitalize;
+}
+
+/* Darker border on secondary CTA in dark mode for better contrast */
+@media (prefers-color-scheme: dark) {
+    a.cta.secondary {
+        border-color: hsl(from var(--color-brand-500) h s 35);
+    }
 }
 
 :is(a.cta):hover {
@@ -692,6 +663,8 @@ a.cta.secondary {
     font-size: clamp(1.9rem, 4vw, 2.6rem);
     margin-top: 0;
     margin-bottom: var(--space-sm);
+    text-align: left;
+    margin-inline: 0;
 }
 
 .split-content p {
