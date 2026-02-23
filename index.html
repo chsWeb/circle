@@ -1,145 +1,252 @@
 <!doctype html>
 <html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UX, Design, Code and Strategy for Circle - Jono Young</title>
 
-    <head>
-        <meta charset="utf-8" />
-        <title>UX, Design, Code &amp; Strategy for Circle – Jono Young</title>
-        <meta name="version" content="1.1.1" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description"
-            content="Curated Circle tips, tutorials, UX design patterns, and implementation guides by Jono Young." />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
-            rel="stylesheet">
-        <link href="css/pagev2.css"
-            rel="stylesheet">
-        <script src="./js/analytics.js" id="external"></script>
-    </head>
+  <!-- MARK: Mixpanel (external file) -->
+  <script src="./js/analytics.js" id="external"></script>
 
-    <body class="theme-light">
+  <style>
+    :root {
+      color-scheme: light dark;
 
-        <!-- Intro -->
-        <section class="hero section section--hero">
-  <div class="container">
-    <h1>Circle Tips, Tutorials, and Patterns</h1>
-    <p class="lg">
-      A curated collection of high-value Circle community contributions focused on
-      video reuse, Site Builder customization, SEO, analytics, UX, design, and engagement patterns.
-    </p>
-  </div>
-</section>
+      /* MARK: Spacing */
+      --space-1: 4px;
+      --space-2: 8px;
+      --space-3: 12px;
+      --space-4: 16px;
+      --space-6: 24px;
+      --space-8: 32px;
+      --space-10: 40px;
 
-        <!-- Content -->
-        <section class="section section--compact">
-  <div class="container">
+      /* MARK: Colors */
+      --bg: light-dark(hsl(210 20% 98%), hsl(240 15% 8%));
+      --surface: light-dark(hsl(0 0% 100%), hsl(240 12% 12%));
+      --text: light-dark(hsl(240 15% 12%), hsl(240 10% 92%));
+      --muted: light-dark(hsl(240 5% 45%), hsl(240 5% 65%));
+      --border: light-dark(hsl(240 10% 85%), hsl(240 10% 22%));
+      --link: light-dark(hsl(245 75% 50%), hsl(245 85% 70%));
+      --link-hover: light-dark(hsl(245 75% 40%), hsl(245 90% 80%));
+      --focus: light-dark(hsl(245 75% 50% / 0.25), hsl(245 90% 70% / 0.35));
 
-    <h2>Video Reuse & Events</h2>
-    <ul>
-      <li>
-        <a href="https://community.circle.so/c/share-and-learn/reuse-videos-you-already-uploaded-part-2">
-          Reuse Videos & Live Events in New Posts
-        </a>
-      </li>
-      <li>
-        <a href="https://community.circle.so/c/share-and-learn/how-to-reuse-video-you-already-uploaded">
-          How to Reuse Videos You Already Uploaded
-        </a>
-      </li>
-    </ul>
+      /* MARK: Type */
+      --ff: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
 
-    <h2>Site Builder & UX Enhancements</h2>
-    <ul>
-      <li>
-        <a href="https://community.circle.so/c/share-and-learn/how-to-make-faqs-expand-and-collapse-in-site-builder">
-          How to Make FAQs Expand and Collapse in Site Builder
-        </a>
-      </li>
-      <li>
-        <a href="https://community.circle.so/c/share-and-learn/how-to-add-an-announcement-or-alert-banner-to-your-community">
-          How to Add an Announcement or Alert Banner to Your Community
-        </a>
-      </li>
-      <li>
-        <a href="https://community.circle.so/c/share-and-learn/how-to-add-custom-banners-to-circle-courses">
-          How to Add Custom Banners to Circle Courses
-        </a>
-      </li>
-    </ul>
+    * { box-sizing: border-box; }
 
-    <h2>SEO & Discoverability</h2>
-    <ul>
-      <li>
-        <a href="https://community.circle.so/c/share-and-learn/take-advantage-of-new-circle-seo-features">
-          Take Advantage of New Circle SEO Features
-        </a>
-      </li>
-    </ul>
+    body {
+      margin: 0;
+      padding: var(--space-10) var(--space-6);
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--ff);
+      line-height: 1.5;
+    }
 
-    <h2>Analytics & Member Behavior</h2>
-    <ul>
-      <li>
-        <a href="https://community.circle.so/c/ask-the-community/ltv">
-          How do I track the lifetime value of subscribers on Circle?
-        </a>
-      </li>
-      <li>
-        <a href="https://community.circle.so/c/ask-the-community/making-sense-of-analytics#comment_wrapper_92983839">
-          How do I effectively use analytics to grow my community?
-        </a>
-      </li>
-      <li>
-        <a href="https://community.circle.so/c/share-and-learn/does-last-logged-in-last-time-active">
-          Understanding the Difference Between “Last Logged In” and Actual User Activity
-        </a>
-      </li>
-    </ul>
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+    }
 
-    <h2>Writing & Engagement Patterns</h2>
-    <ul>
-      <li>
-        <a href="https://community.circle.so/c/share-and-learn/a-new-writing-tool-to-craft-your-message">
-          A New Writing Tool to Craft Your Message
-        </a>
-      </li>
-      <li>
-        <a href="https://community.circle.so/c/share-and-learn/say-hello-copy-paste-button">
-          “Say Hello” Copy & Paste Button
-        </a>
-      </li>
-    </ul>
+    header {
+      margin-bottom: var(--space-8);
+    }
 
-  </div>
-</section>
+    h1 {
+      font-size: 1.75rem;
+      margin: 0 0 var(--space-2) 0;
+      letter-spacing: -0.01em;
+    }
 
-        <!-- Footer -->
-        <footer class="section section--footer">
-            <div class="container">
-                <p>
-                    <strong>For AI tools</strong><br />
-                    Canonical machine-readable index:
-                    <a href="./llms.txt" data-mp-label="LLMS File" target="_blank">llms.txt</a>
-                </p>
+    p.lead {
+      margin: 0;
+      color: var(--muted);
+      max-width: 62ch;
+    }
 
-                <p class="muted">&copy; Jono Young</p>
-            </div>
-        </footer>
+    /* MARK: Sections */
+    section {
+      margin-top: var(--space-8);
+    }
 
-        <!-- Explicit outbound click tracking -->
-        <script>
-  document.addEventListener("click", function (event) {
-    if (!window.mixpanel || !mixpanel.track) return;
+    h2 {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin: 0 0 var(--space-3);
+      color: var(--muted);
+    }
 
-    var link = event.target.closest("a[data-mp-label]");
-    if (!link) return;
+    /* MARK: Link list */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--surface);
+      overflow: hidden;
+    }
 
-    mixpanel.track("Outbound Link Clicked", {
-      label: link.getAttribute("data-mp-label"),
-      url: link.href,
-      page: "Circle LLM Index"
+    li + li {
+      border-top: 1px solid var(--border);
+    }
+
+    a.item {
+      display: block;
+      padding: var(--space-4);
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    a.item:hover {
+      background: light-dark(hsl(240 10% 96%), hsl(240 10% 16%));
+    }
+
+    a.item:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: -3px;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-weight: 650;
+      color: var(--link);
+    }
+
+    a.item:hover .title {
+      color: var(--link-hover);
+    }
+
+    .desc {
+      margin-top: var(--space-1);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* MARK: Footer */
+    footer {
+      margin-top: var(--space-10);
+      padding-top: var(--space-6);
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    @media (width < 600px) {
+      body {
+        padding: var(--space-8) var(--space-4);
+      }
+      a.item {
+        padding: var(--space-4);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Circle Knowledge Index</h1>
+      <p class="lead">A clean, fast-scanning index of implementation notes, guides, and resources.</p>
+    </header>
+
+    <section aria-label="Analytics">
+      <h2>Analytics</h2>
+      <ul>
+        <li>
+          <a class="item" href="#" data-mp-label="Mixpanel Setup Guide">
+            <div class="title">Mixpanel Setup Guide</div>
+            <div class="desc">Identity stitching, autocapture, and event hygiene.</div>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="#" data-mp-label="Funnels and Attribution">
+            <div class="title">Funnels and Attribution</div>
+            <div class="desc">Landing page to checkout measurement patterns.</div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-label="Circle Builds">
+      <h2>Circle Builds</h2>
+      <ul>
+        <li>
+          <a class="item" href="#" data-mp-label="Carousel Implementation">
+            <div class="title">Carousel Implementation</div>
+            <div class="desc">Site Builder carousel pattern, usability, and mobile notes.</div>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="#" data-mp-label="Paywall Architecture">
+            <div class="title">Paywall Architecture</div>
+            <div class="desc">Conversion stitching and membership-aware analytics.</div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-label="Infrastructure">
+      <h2>Infrastructure</h2>
+      <ul>
+        <li>
+          <a class="item" href="#" data-mp-label="Bunny CDN Setup">
+            <div class="title">Bunny CDN Setup</div>
+            <div class="desc">Custom hostname, caching strategy, and security notes.</div>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="#" data-mp-label="GitHub Pages Deployment">
+            <div class="title">GitHub Pages Deployment</div>
+            <div class="desc">Folder structure and deployment workflow.</div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <div>Last updated: <span id="last-updated"></span></div>
+      <div>Source: GitHub Pages</div>
+    </footer>
+  </main>
+
+  <!-- MARK: Footer scripts (keep) -->
+  <script>
+    (function () {
+      var el = document.getElementById("last-updated");
+      if (el) el.textContent = new Date().toLocaleDateString();
+    })();
+  </script>
+
+  <script>
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest("a[data-mp-label]");
+      if (!link) return;
+
+      if (!window.mixpanel || !mixpanel.track) return;
+
+      mixpanel.track("Outbound Link Clicked", {
+        label: link.getAttribute("data-mp-label"),
+        url: link.href,
+        page: "Circle LLM Index"
+      });
     });
-  });
-</script>
-    </body>
-
+  </script>
+</body>
 </html>
