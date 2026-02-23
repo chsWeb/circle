@@ -127,17 +127,19 @@
 
         <!-- Explicit outbound click tracking -->
         <script>
-            document.addEventListener("click", function (event) {
-                var link = event.target.closest("a[data-mp-label]");
-                if (!link) return;
+  document.addEventListener("click", function (event) {
+    if (!window.mixpanel || !mixpanel.track) return;
 
-                mixpanel.track("Outbound Link Clicked", {
-                    label: link.getAttribute("data-mp-label"),
-                    url: link.href,
-                    page: "Circle LLM Index"
-                });
-            });
-        </script>
+    var link = event.target.closest("a[data-mp-label]");
+    if (!link) return;
+
+    mixpanel.track("Outbound Link Clicked", {
+      label: link.getAttribute("data-mp-label"),
+      url: link.href,
+      page: "Circle LLM Index"
+    });
+  });
+</script>
     </body>
 
 </html>
