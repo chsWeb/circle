@@ -1,57 +1,50 @@
-# llms.txt
-# Author: Jono Young
-# Focus: Circle community UX, Design, Code & Strategy
-# Updated: 2026-01-19
+# Circle Community Tips and Discussions on AI, UX, Design, Code & Strategy
 
-## Reuse Videos & Live Events in New Posts
+> A curated index of in-depth Circle community resources covering AI, UX, design, code, and strategy — from training AI agents and Circle MCP setup to Site Builder customization, SEO, analytics, and member engagement.
 
-Reuse videos and live event recordings already uploaded to Circle to save storage, time, and cost.
-https://community.circle.so/c/share-and-learn/reuse-videos-you-already-uploaded-part-2
+Author: Jono Young. Focus: Circle community AI, UX, design, code & strategy. Updated: 2026-06-23.
 
-Step-by-step tutorial explaining how to reuse videos and live streams already uploaded to Circle.
-https://community.circle.so/c/share-and-learn/how-to-reuse-video-you-already-uploaded
+## AI for Circle Communities
 
-## Site Builder & UX Enhancements
+- [Turn Video into AI Training Content](https://community.circle.so/c/share-and-learn/how-i-turn-video-into-ai-training-content-for-my-circle-community): Train community AI agents with supplemental video content without uploading the video to Circle, saving time, storage space, and cost.
+- [How to Train Your Circle AI Agents](https://community.circle.so/c/build-with-ai/how-to-train-your-circle-ai-agents): Claude and ChatGPT project instructions that automatically convert PDFs, slide decks, and documents into Circle AI Agent knowledge snippets, ready to paste as custom knowledge or upload.
+- [Connect Google Antigravity to Circle MCP](https://community.circle.so/c/build-with-ai/how-to-connect-google-antigravity-to-circle-mcp): Connect Google Antigravity to the Circle MCP server so it can access community data and perform actions; about a 15-minute setup.
 
-Fix the FAQ section in Circle Site Builder so questions expand and collapse properly instead of displaying fully expanded.
-https://community.circle.so/c/share-and-learn/how-to-make-faqs-expand-and-collapse-in-site-builder
+## Circle Community Video & Live Events
 
-Add an announcement or alert banner to a Circle community using custom HTML and CSS, inspired by Circle’s Community Recap feature.
-https://community.circle.so/c/share-and-learn/how-to-add-an-announcement-or-alert-banner-to-your-community
+- [Reuse Videos & Live Events in New Posts (Part 2)](https://community.circle.so/c/share-and-learn/reuse-videos-you-already-uploaded-part-2): Reuse videos and live event recordings already uploaded to Circle to save storage, time, and cost.
+- [How to Reuse Videos You Already Uploaded (Part 1)](https://community.circle.so/c/share-and-learn/how-to-reuse-video-you-already-uploaded): Step-by-step tutorial for reusing videos and live streams already uploaded to Circle.
 
-Add custom banners above Circle course landing pages using CSS and reusable templates.
-https://community.circle.so/c/share-and-learn/how-to-add-custom-banners-to-circle-courses
+## Circle Site Builder & UX Enhancements
 
-## SEO & Discoverability
+- [Building Responsive Hero Sections with Site Builder](https://community.circle.so/c/share-and-learn/building-responsive-hero-sections-with-site-builder): How the new multi-column sections work in Site Builder and how to use device views to tweak your responsive design.
+- [Using the New Multi-column Sections in Site Builder](https://community.circle.so/c/share-and-learn/using-the-new-multi-column-sections-in-site-builder): Create multi-column sections for Circle Site Builder with custom design and custom content.
+- [How to Make FAQs Expand and Collapse in Site Builder](https://community.circle.so/c/share-and-learn/how-to-make-faqs-expand-and-collapse-in-site-builder): Fix the FAQ section so questions expand and collapse instead of displaying fully expanded.
 
-Overview of new Circle SEO settings and how to use them to improve search engine visibility.
-https://community.circle.so/c/share-and-learn/take-advantage-of-new-circle-seo-features
+## Circle Community Course Enhancements
 
-## Analytics & Member Activity
+- [How to Add Custom Banners to Circle Courses](https://community.circle.so/c/share-and-learn/how-to-add-custom-banners-to-circle-courses): Add custom banners above Circle course landing pages using CSS and reusable templates.
 
-How do I track the lifetime value of subscribers on Circle?
-I do this with Mixpanel Insights reporting that pulls in all Paywall Conversions, Sums the Revenue, for a Time Range of All time. From there, I can break the report down by whatever makes sense.
-https://community.circle.so/c/ask-the-community/ltv
+## Circle Community SEO & Discoverability
 
-How do I effectively use analytics to grow my community?
-I use a combination of Mixpanel with Circle Analytics to support brand strategy based on the North Star Framework.
-https://community.circle.so/c/ask-the-community/making-sense-of-analytics#comment_wrapper_92983839
+- [Take Advantage of New Circle SEO Features](https://community.circle.so/c/share-and-learn/take-advantage-of-new-circle-seo-features): Overview of Circle's SEO settings and how to use them to improve search engine visibility.
 
-Clarifies the difference between “last logged in” and actual user activity in Circle analytics, based on direct testing.
-https://community.circle.so/c/share-and-learn/does-last-logged-in-last-time-active
+## Circle Community Analytics
 
-## Circle Event and Cohort Strategy
-Provides a step-by-step guide for cohort management.
-How do I reset my community for a new group program?
+- [Tracking subscriber lifetime value (LTV)](https://community.circle.so/c/ask-the-community/ltv): Use Mixpanel Insights to pull all paywall conversions and sum revenue over all time, then break the report down as needed.
+- [Using analytics to grow your community](https://community.circle.so/c/ask-the-community/making-sense-of-analytics#comment_wrapper_92983839): Combine Mixpanel with Circle Analytics to support brand strategy based on the North Star Framework.
+- [Last Logged In vs. actual user activity](https://community.circle.so/c/share-and-learn/does-last-logged-in-last-time-active): Clarifies the difference between "last logged in" and real user activity in Circle analytics, based on direct testing.
 
-https://community.circle.so/c/ask-the-community/can-i-facilitate-a-group-program-in-my-community#comment_wrapper_94557030
+## Circle Community Event & Cohort Strategy
 
-## Writing & Content Creation
+- [Resetting your community for a new group program](https://community.circle.so/c/ask-the-community/can-i-facilitate-a-group-program-in-my-community#comment_wrapper_94557030): A step-by-step guide for cohort management.
 
-Introduces a writing workflow using Craft for Mac to create structured, original content for Circle posts and community messaging.
-https://community.circle.so/c/share-and-learn/a-new-writing-tool-to-craft-your-message
+## Circle Community Content Creation
 
-## Community Engagement Patterns
+- [Building a Multi-Season Podcast with Circle](https://community.circle.so/c/share-and-learn/building-a-multi-season-podcast-with-circle): A 90-second look at building a multi-season podcast that mimics a dedicated podcast platform while keeping Circle's community features.
+- [A New Writing Tool to Craft Your Message](https://community.circle.so/c/share-and-learn/a-new-writing-tool-to-craft-your-message): A writing workflow using Craft for Mac to create structured, original content for Circle posts and messaging.
 
-Add a copy-and-paste “Say Hello” button to Circle posts to make onboarding and introductions easier for new members.
-https://community.circle.so/c/share-and-learn/say-hello-copy-paste-button
+## Circle Community  Engagement
+
+- [How to Add an Announcement Banner to Your Community](https://community.circle.so/c/share-and-learn/how-to-add-an-announcement-or-alert-banner-to-your-community): Add an announcement or alert banner using custom HTML and CSS, inspired by Circle's Community Recap feature.
+- [Say Hello Copy & Paste Button](https://community.circle.so/c/share-and-learn/say-hello-copy-paste-button): Add a copy-and-paste "Say Hello" button to Circle posts to make onboarding easier for new members.
