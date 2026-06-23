@@ -1,12 +1,22 @@
-# Circle Community Discussions on AI, UX, Design, Code & Strategy
+# Circle Tips, Tutorials, and Discussions on UX, Design, Code & Strategy
 
-Since joining the Circle community, I have shared dozens of detailed posts and thousands comments focused on UX, design, code, and strategy, earning Legend status not through volume, and not through high-point *Say hello* comments, but through depth. 
+Since joining the Circle community, I have shared dozens of detailed posts and over 1,600 comments focused on UX, design, code, and strategy, earning Legend status not through volume, and not through high-point *Say hello* comments, but through depth. 
 
 I routinely walk community builders through complex multi-step workflows: architecting solutions with outside-the-box approaches using Space Groups, building responsive Site Builder pages that pull dynamic content via the Circle API, designing podcast spaces from scratch, and writing custom code snippets that extend Circle's native capabilities. 
 
-### Table of Contents
-I devoted my free time to helping the Circle community thrive. This is a curated listing of some of my most engaging posts. If you run or build in Circle, these resources are designed to save you time, reduce friction, and help you get more value from the Circle platform. 
+I devoted my free time to helping the Circle community thrive. This is a curated listing of some of my most engaging posts.
 
+#### These posts focus on:
+- Using the latest AI tools and MCP servers for Circle
+- Creating engaging Circle communities
+- Managing video, images and content
+- Customizing Circle Site Builder pages
+- Improving SEO and discoverability
+- Understanding analytics and member behavior
+
+If you run or build in Circle, these resources are designed to save you time, reduce friction, and help you get more value from the Circle platform.
+
+### Table of Contents
 
 - [AI for Circle Communities](#ai-for-circle-communities)
 - [Video & Live Events](#video--live-events)
@@ -75,9 +85,6 @@ https://community.circle.so/c/share-and-learn/using-the-new-multi-column-section
 ### How to Make FAQs Expand and Collapse in Site Builder
 Fix the FAQ section so questions expand and collapse instead of displaying fully expanded.  
 
-![Expand and collapse FAQs](https://app.circle.so/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCQi9RekFjPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--f1e7384cceb59f892d324754886d0a5b3ee74a46/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJNEJEQTZDbk5oZG1WeWV3WTZDbk4wY21sd1ZBPT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--7535ef66ff04b52d1ea165e904a77a64f9cc7389/840x300-PostCover.png )
-https://community.circle.so/c/share-and-learn/how-to-make-faqs-expand-and-collapse-in-site-builder
-
 [Back to Table of Contents](#table-of-contents)
 
 ---
@@ -136,7 +143,6 @@ https://community.circle.so/c/share-and-learn/a-new-writing-tool-to-craft-your-m
 ### How to Add an Announcement Banner to Your Community
 Add an announcement or alert banner using custom HTML and CSS, inspired by Circle's Community Recap feature.  
 
-![Special Announcement bar](https://app.circle.so/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCSC9adndjPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--e25431690a7864428a8848620f074513b30191e4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJNEJEQTZDbk5oZG1WeWV3WTZDbk4wY21sd1ZBPT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--7535ef66ff04b52d1ea165e904a77a64f9cc7389/840x300-PostCover-bannerBar%20(2).png )
 https://community.circle.so/c/share-and-learn/how-to-add-an-announcement-or-alert-banner-to-your-community
 
 ### "Say Hello" Copy & Paste Button
