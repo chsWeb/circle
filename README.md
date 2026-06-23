@@ -4,19 +4,9 @@ Since joining the Circle community, I have shared dozens of detailed posts and o
 
 I routinely walk community builders through complex multi-step workflows: architecting solutions with outside-the-box approaches using Space Groups, building responsive Site Builder pages that pull dynamic content via the Circle API, designing podcast spaces from scratch, and writing custom code snippets that extend Circle's native capabilities. 
 
-I devoted my free time to helping the Circle community thrive. This is a curated listing of some of my most engaging posts.
-
-#### These posts focus on:
-- Using the latest AI tools and MCP servers for Circle
-- Creating engaging Circle communities
-- Managing video, images and content
-- Customizing Circle Site Builder pages
-- Improving SEO and discoverability
-- Understanding analytics and member behavior
-
-If you run or build in Circle, these resources are designed to save you time, reduce friction, and help you get more value from the Circle platform.
-
 ### Table of Contents
+I devoted my free time to helping the Circle community thrive. This is a curated listing of some of my most engaging posts. If you run or build in Circle, these resources are designed to save you time, reduce friction, and help you get more value from the Circle platform. 
+
 
 - [AI for Circle Communities](#ai-for-circle-communities)
 - [Video & Live Events](#video--live-events)
