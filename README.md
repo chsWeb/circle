@@ -1,6 +1,6 @@
 # Circle Tips, Tutorials, and Discussions on UX, Design, Code & Strategy
 
-Since joining the Circle community, I have shared dozens of detailed posts and over 1,600 comments focused on UX, design, code, and strategy, earning Legend status not through volume, and not through high-point *Say hello* comments, but through depth. 
+Since joining the Circle community, I have shared dozens of detailed posts and thousands comments focused on UX, design, code, and strategy, earning Legend status not through volume, and not through high-point *Say hello* comments, but through depth. 
 
 I routinely walk community builders through complex multi-step workflows: architecting solutions with outside-the-box approaches using Space Groups, building responsive Site Builder pages that pull dynamic content via the Circle API, designing podcast spaces from scratch, and writing custom code snippets that extend Circle's native capabilities. 
 
