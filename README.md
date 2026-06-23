@@ -1,4 +1,4 @@
-# Circle Tips, Tutorials, and Discussions on UX, Design, Code & Strategy
+# Circle Community Discussions on AI, UX, Design, Code & Strategy
 
 Since joining the Circle community, I have shared dozens of detailed posts and thousands comments focused on UX, design, code, and strategy, earning Legend status not through volume, and not through high-point *Say hello* comments, but through depth. 
 
