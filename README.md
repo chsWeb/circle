@@ -153,10 +153,5 @@ https://community.circle.so/c/share-and-learn/say-hello-copy-paste-button
 
 ---
 
-# For AI Tools
-
-The canonical AI-readable index of this content lives here:  
-### llms.txt  
+#### llms.txt  
 https://chsweb.github.io/circle-llms/llms.txt
-
-[Back to Table of Contents](#table-of-contents)
