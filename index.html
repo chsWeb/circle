@@ -6,196 +6,268 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Jono Young" />
     <meta name="keywords"
-      content="Circle, community, AI, video, Site Builder, SEO, analytics, UX, design, engagement patterns" />
+      content="Circle, community, AI, MCP, video, Site Builder, courses, SEO, analytics, UX, design, code, strategy, engagement" />
     <meta name="description"
-      content="A curated collection of Circle community contributions focused on AI, video, Site Builder customization, SEO, analytics, UX, design, and engagement patterns." />
-    <title>UX, Design, Code &amp; Strategy for Circle - Jono Young</title>
+      content="A curated listing of Jono Young's most engaging Circle community posts on AI, video, Site Builder, courses, SEO, analytics, UX, design, code, and strategy." />
+    <title>Circle Community Discussions on AI, UX, Design, Code &amp; Strategy</title>
 
     <!-- MARK: Mixpanel (external file) -->
     <script src="./js/analytics.js" id="external"></script>
     <link href="./css/wiki.css" rel="stylesheet">
+
+    <!-- MARK: Page-specific intro styles (scoped; does not touch wiki.css) -->
+    <style>
+      header p {
+        margin: 0 0 var(--space-3) 0;
+        color: var(--muted);
+        max-width: 64ch;
+      }
+
+      header p:last-of-type {
+        margin-bottom: 0;
+      }
+
+      ul.focus {
+        list-style: disc;
+        padding: 0 0 0 1.5rem;
+        margin: var(--space-4) 0 0;
+        border: 0;
+        border-radius: 0;
+        background: none;
+        max-width: 64ch;
+        color: var(--muted);
+      }
+
+      ul.focus li {
+        padding: 0;
+        margin: var(--space-1) 0;
+      }
+
+      ul.focus li+li {
+        border-top: 0;
+      }
+    </style>
   </head>
 
   <body>
     <main>
       <header>
-        <h1>Circle Tips, Tutorials &amp; Patterns</h1>
-        <p class="lead">A curated collection of Circle community contributions focused on AI, video, Site Builder
-          customization, SEO, analytics, UX, design, and engagement patterns.</p>
+        <h1>Circle Community Discussions on AI, UX, Design, Code &amp; Strategy</h1>
+        <p>Since joining the Circle community, I have shared dozens of detailed posts and over 1,600 comments focused on
+          UX, design, code, and strategy, earning Legend status not through volume, and not through high-point
+          <em>Say hello</em> comments, but through depth.</p>
+        <p>I routinely walk community builders through complex multi-step workflows: architecting solutions with
+          outside-the-box approaches using Space Groups, building responsive Site Builder pages that pull dynamic content
+          via the Circle API, designing podcast spaces from scratch, and writing custom code snippets that extend
+          Circle's native capabilities.</p>
+        <p>I devoted my free time to helping the Circle community thrive. This is a curated listing of some of my most
+          engaging posts. These posts focus on:</p>
+        <ul class="focus">
+          <li>Using the latest AI tools and MCP servers for Circle</li>
+          <li>Creating engaging Circle communities</li>
+          <li>Managing video, images and content</li>
+          <li>Customizing Circle Site Builder pages</li>
+          <li>Improving SEO and discoverability</li>
+          <li>Understanding analytics and member behavior</li>
+        </ul>
+        <p>If you run or build in Circle, these resources are designed to save you time, reduce friction, and help you
+          get more value from the Circle platform.</p>
       </header>
 
-      <section aria-label="Artificial Intelligence for Circle">
-        <h2>Artificial Intelligence (AI) for Circle</h2>
+      <section id="ai-for-circle-communities" aria-label="AI for Circle Communities">
+        <h2>AI for Circle Communities</h2>
         <ul>
           <li>
             <a class="item"
               href="https://community.circle.so/c/share-and-learn/how-i-turn-video-into-ai-training-content-for-my-circle-community"
-              data-mp-label="Turn Videos in AI Training Content for My Circle Community">
+              data-mp-label="Turn Videos in AI Training Content">
               <div class="title">Turn Videos in AI Training Content</div>
               <div class="desc">How to train your community agents with supplemental video content without uploading the
-                content to Circle.</div>
+                content to Circle. Saves time, storage space, and cost, while adding value to your community.</div>
             </a>
           </li>
           <li>
             <a class="item" href="https://community.circle.so/c/build-with-ai/how-to-train-your-circle-ai-agents"
               data-mp-label="How to Train Your Circle AI Agents">
               <div class="title">How to Train Your Circle AI Agents</div>
-              <div class="desc">Create Claude and ChatGPT project instructions that convert PDFs, slide decks, and
-                documents into Circle AI Agent knowledge snippets.</div>
+              <div class="desc">Create a set of Claude and ChatGPT project instructions that automatically convert PDFs,
+                slide decks, and documents into Circle AI Agent knowledge snippets ready for copy and paste as custom
+                knowledge (recommended) or as an upload.</div>
             </a>
           </li>
           <li>
-            <a class="item" href="https://community.circle.so/c/build-with-ai/how-to-connect-google-antigravity-to-circle-mcp"
-              data-mp-label="How to Connect Google Antigravity to Circle MCP">
+            <a class="item"
+              href="https://community.circle.so/c/build-with-ai/how-to-connect-google-antigravity-to-circle-mcp"
+              data-mp-label="Connect Google Antigravity to Circle MCP">
               <div class="title">Connect Google Antigravity to Circle MCP</div>
-              <div class="desc">Connect Google Antigravity to the Circle MCP server so it can access community data and
-                perform actions.</div>
+              <div class="desc">Once connected, Antigravity can access Circle community data and perform actions through
+                the Circle MCP server. The setup took about 15 minutes, and while it's more technical than it should be
+                today, I expect the process to become much simpler as MCP support matures.</div>
             </a>
           </li>
         </ul>
       </section>
 
-      <section aria-label="Video, Podcasts and Events">
-        <h2>Video, Podcasts &amp; Events</h2>
+      <section id="video-live-events" aria-label="Video and Live Events">
+        <h2>Video &amp; Live Events</h2>
         <ul>
           <li>
             <a class="item"
-              href="https://community.circle.so/c/share-and-learn/building-a-multi-season-podcast-with-circle"
-              data-mp-label="Building a Multi-Season Podcast with Circle">
-              <div class="title">Building a Multi-Season Podcast with Circle</div>
-              <div class="desc">Build a multi-season podcast that mimics a dedicated podcast platform.</div>
-            </a>
-          </li>
-          <li>
-            <a class="item"
               href="https://community.circle.so/c/share-and-learn/reuse-videos-you-already-uploaded-part-2"
-              data-mp-label="Reuse Videos & Live Events in New Circle Posts">
-              <div class="title">Reuse Videos &amp; Live Events in New Posts (Part II)</div>
-              <div class="desc">Reuse videos and live events you already uploaded in new posts.</div>
+              data-mp-label="Reuse Videos & Live Events in New Posts (Part 2)">
+              <div class="title">Reuse Videos &amp; Live Events in New Posts (Part 2)</div>
+              <div class="desc">Save storage space, save time, and save money by reusing videos and live event recordings
+                you've already added to Circle.</div>
             </a>
           </li>
           <li>
             <a class="item" href="https://community.circle.so/c/share-and-learn/how-to-reuse-video-you-already-uploaded"
-              data-mp-label="How to Reuse Videos You Already Uploaded to Circle">
-              <div class="title">How to Reuse Videos You Already Uploaded (Part I)</div>
-              <div class="desc">Practical steps for reusing existing uploaded videos.</div>
+              data-mp-label="How to Reuse Videos You Already Uploaded (Part 1)">
+              <div class="title">How to Reuse Videos You Already Uploaded (Part 1)</div>
+              <div class="desc">Step-by-step tutorial for reusing videos and live streams already uploaded to Circle.
+              </div>
             </a>
           </li>
         </ul>
       </section>
 
-      <section aria-label="Circle Site Builder and UX Enhancements">
-        <h2>Circle Site Builder &amp; UX Enhancements</h2>
+      <section id="circle-site-builder-enhancements" aria-label="Circle Site Builder Enhancements">
+        <h2>Circle Site Builder Enhancements</h2>
         <ul>
           <li>
             <a class="item"
               href="https://community.circle.so/c/share-and-learn/building-responsive-hero-sections-with-site-builder"
-              data-mp-label="Building Responsive Hero Sections with Circle Site Builder">
-              <div class="title">Building Responsive Hero Sections with Circle Site Builder</div>
-              <div class="desc">Build a responsive Circle hero section that looks great on desktop, tablet, and mobile.
-              </div>
+              data-mp-label="Building Responsive Hero Sections with Site Builder">
+              <div class="title">Building Responsive Hero Sections with Site Builder</div>
+              <div class="desc">The goal of this post and video is to show you the basics of how the new multi-column
+                sections work in Site Builder and how to use device views to tweak your design.</div>
             </a>
           </li>
           <li>
             <a class="item"
               href="https://community.circle.so/c/share-and-learn/using-the-new-multi-column-sections-in-site-builder"
               data-mp-label="Using the New Multi-column Sections in Site Builder">
-              <div class="title">Using the New Multi-column Sections in Circle Site Builder</div>
-              <div class="desc">Tips on using containers for easier builds and optimizing for mobile.</div>
+              <div class="title">Using the New Multi-column Sections in Site Builder</div>
+              <div class="desc">Learn how to create multi-column sections for Circle Site Builder with custom design and
+                custom content.</div>
             </a>
           </li>
           <li>
             <a class="item"
               href="https://community.circle.so/c/share-and-learn/how-to-make-faqs-expand-and-collapse-in-site-builder"
               data-mp-label="How to Make FAQs Expand and Collapse in Site Builder">
-              <div class="title">How to Make FAQs Expand and Collapse in Circle Site Builder</div>
-              <div class="desc">Expandable and collapsible FAQ patterns for Circle's Site Builder pages.</div>
-            </a>
-          </li>
-          <li>
-            <a class="item"
-              href="https://community.circle.so/c/share-and-learn/how-to-add-an-announcement-or-alert-banner-to-your-community"
-              data-mp-label="How to Add an Announcement or Alert Banner to Your Community">
-              <div class="title">How to Add an Announcement or Alert Banner to Your Circle Community</div>
-              <div class="desc">Add a banner for announcements or alerts inside your Circle community.</div>
-            </a>
-          </li>
-          <li>
-            <a class="item"
-              href="https://community.circle.so/c/share-and-learn/how-to-add-custom-banners-to-circle-courses"
-              data-mp-label="How to Add Custom Banners to Circle Courses">
-              <div class="title">How to Add Custom Banners to Circle Courses</div>
-              <div class="desc">Add custom banners to course pages for better UX and branding.</div>
+              <div class="title">How to Make FAQs Expand and Collapse in Site Builder</div>
+              <div class="desc">Fix the FAQ section so questions expand and collapse instead of displaying fully
+                expanded.</div>
             </a>
           </li>
         </ul>
       </section>
 
-      <section aria-label="SEO and Discoverability">
-        <h2>SEO &amp; Discoverability</h2>
+      <section id="circle-course-enhancements" aria-label="Circle Course Enhancements">
+        <h2>Circle Course Enhancements</h2>
+        <ul>
+          <li>
+            <a class="item"
+              href="https://community.circle.so/c/share-and-learn/how-to-add-custom-banners-to-circle-courses"
+              data-mp-label="How to Add Custom Banners to Circle Courses">
+              <div class="title">How to Add Custom Banners to Circle Courses</div>
+              <div class="desc">Add custom banners above Circle course landing pages using CSS and reusable templates.
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="circle-seo-discoverability" aria-label="Circle SEO and Discoverability">
+        <h2>Circle SEO &amp; Discoverability</h2>
         <ul>
           <li>
             <a class="item"
               href="https://community.circle.so/c/share-and-learn/take-advantage-of-new-circle-seo-features"
               data-mp-label="Take Advantage of New Circle SEO Features">
               <div class="title">Take Advantage of New Circle SEO Features</div>
-              <div class="desc">Improve discoverability by leveraging Circle's SEO capabilities.</div>
+              <div class="desc">Overview of Circle's SEO settings and how to use them to improve search visibility.</div>
             </a>
           </li>
         </ul>
       </section>
 
-      <section aria-label="Analytics and Member Behavior">
-        <h2>Analytics &amp; Member Behavior</h2>
+      <section id="circle-analytics-member-behavior" aria-label="Circle Analytics and Member Behavior">
+        <h2>Circle Analytics &amp; Member Behavior</h2>
         <ul>
-          <li>
-            <a class="item" href="https://community.circle.so/c/ask-the-community/ltv"
-              data-mp-label="How do I track the lifetime value of subscribers on Circle?">
-              <div class="title">How do I track the lifetime value of subscribers on Circle?</div>
-              <div class="desc">Approaches to measuring subscriber LTV in Circle.</div>
-            </a>
-          </li>
-          <li>
-            <a class="item"
-              href="https://community.circle.so/c/ask-the-community/making-sense-of-analytics#comment_wrapper_92983839"
-              data-mp-label="How do I effectively use analytics to grow my community?">
-              <div class="title">How do I effectively use analytics to grow my community?</div>
-              <div class="desc">Practical guidance for using analytics to drive community growth.</div>
-            </a>
-          </li>
           <li>
             <a class="item" href="https://community.circle.so/c/share-and-learn/does-last-logged-in-last-time-active"
               data-mp-label="Understanding the Difference Between Last Logged In and Actual User Activity">
               <div class="title">Understanding the Difference Between &ldquo;Last Logged In&rdquo; and Actual User
                 Activity</div>
-              <div class="desc">Clarifies what &ldquo;Last Logged In&rdquo; means versus real activity signals.</div>
+              <div class="desc">Clarifies how Circle tracks user activity and why &ldquo;last logged in&rdquo; can be
+                misleading.</div>
             </a>
           </li>
         </ul>
       </section>
 
-      <section aria-label="Writing and Engagement Patterns">
-        <h2>Writing &amp; Engagement Patterns</h2>
+      <section id="content-creation-for-your-circle-community" aria-label="Content Creation for Your Circle Community">
+        <h2>Content Creation for Your Circle Community</h2>
         <ul>
+          <li>
+            <a class="item"
+              href="https://community.circle.so/c/share-and-learn/building-a-multi-season-podcast-with-circle"
+              data-mp-label="Building a Multi-Season Podcast with Circle">
+              <div class="title">Building a Multi-Season Podcast with Circle</div>
+              <div class="desc">Here's a 90-second look at how to build a multi-season podcast that mimics a dedicated
+                podcast platform, but packs the punch of Circle's community features.</div>
+            </a>
+          </li>
           <li>
             <a class="item"
               href="https://community.circle.so/c/share-and-learn/a-new-writing-tool-to-craft-your-message"
               data-mp-label="A New Writing Tool to Craft Your Message">
               <div class="title">A New Writing Tool to Craft Your Message</div>
-              <div class="desc">A writing workflow to improve clarity and engagement.</div>
+              <div class="desc">Introduces a writing workflow using Craft for Mac for creating structured, original Circle
+                posts.</div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="circle-community-engagement" aria-label="Circle Community Engagement">
+        <h2>Circle Community Engagement</h2>
+        <ul>
+          <li>
+            <a class="item"
+              href="https://community.circle.so/c/share-and-learn/how-to-add-an-announcement-or-alert-banner-to-your-community"
+              data-mp-label="How to Add an Announcement Banner to Your Community">
+              <div class="title">How to Add an Announcement Banner to Your Community</div>
+              <div class="desc">Add an announcement or alert banner using custom HTML and CSS, inspired by Circle's
+                Community Recap feature.</div>
             </a>
           </li>
           <li>
             <a class="item" href="https://community.circle.so/c/share-and-learn/say-hello-copy-paste-button"
               data-mp-label="Say Hello Copy & Paste Button">
               <div class="title">&ldquo;Say Hello&rdquo; Copy &amp; Paste Button</div>
-              <div class="desc">A simple pattern that lowers friction for member introductions.</div>
+              <div class="desc">Add a copy-and-paste &ldquo;Say Hello&rdquo; button to Circle posts to make onboarding
+                easier for new members.</div>
             </a>
           </li>
         </ul>
       </section>
 
-      <!-- SPONSOR -->
+      <section id="for-ai-tools" aria-label="For AI Tools">
+        <h2>For AI Tools</h2>
+        <ul>
+          <li>
+            <a class="item" href="https://chsweb.github.io/circle-llms/llms.txt" data-mp-label="llms.txt">
+              <div class="title">llms.txt</div>
+              <div class="desc">The canonical AI-readable index of this content.</div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- SPONSOR (not part of README content; page furniture) -->
       <section aria-label="Sponsor" class="sponsor">
         <div class="sponsor-label">Sponsor</div>
         <a class="sponsor-card" href="https://colorswatchpro.com" target="_blank" rel="noopener">
@@ -212,7 +284,6 @@
 
       <footer>
         <div>Last updated: <span id="last-updated"></span></div>
-        <div>Machine-readable index: <a href="./llms.txt">llms.txt</a></div>
         <div>Stay tuned for a big update&hellip;</div>
       </footer>
     </main>
