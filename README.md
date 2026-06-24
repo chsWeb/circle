@@ -33,9 +33,9 @@ If you run or build in Circle, these resources are designed to save you time, re
 
 # AI for Circle Communities
 
-### Turn Videos in AI Training Content
+### Turn Videos into AI Training Content
 
-How to train your community agents with supplemental video content without uploading the content to Circle. Saves time, storage space, and cost, while adding value to your community.
+How to train your Circle community agents with supplemental video content without uploading the content to Circle. Saves time, storage space, and cost, while adding value to your community.
 
 <https://community.circle.so/c/share-and-learn/how-i-turn-video-into-ai-training-content-for-my-circle-community>
 
@@ -55,7 +55,7 @@ Once connected, Antigravity can access Circle community data and perform actions
 
 ---
 
-# Video & Live Events
+# Circle Video & Circle Live Events
 
 ### Reuse Videos & Live Events in New Posts (Part 2)
 
